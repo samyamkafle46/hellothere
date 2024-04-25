@@ -20,7 +20,7 @@ public class App
             Session session = factory.openSession();
 
             Transaction transaction = session.beginTransaction();
-            User user = new User("takeo", "admin", true, true,"admin@takeo.com");
+            User user = new User("takeo1", "admin", true, true,"admin@takeo.com");
             Integer id = (Integer)session.save(user);
             System.out.println(id);
             transaction.commit();
